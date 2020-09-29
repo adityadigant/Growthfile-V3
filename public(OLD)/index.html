@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Login</title>
+ 
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="external/css/intlTelInput.css">
+</head>
+
+
+<body>
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="recaptcha-container"></div>
+  
+
+
+
+  <div id="step1" class="container">
+
+    <h1 class="header">Log in</h1>
+  
+      <input class="ibox" id="phoneNumber" type="tel" maxlength="10" minlength="10" placeholder="99999 88888">
+    <br>
+      <button class="action_button" onclick="submitPhoneNumberAuth()" type="submit" id="sign-in-button">REQUEST OTP</button>
+
+  </div>
+
+  <div id="step2" class="container">
+
+    <h1 class="header">Log in</h1>
+
+      <input class="ibox" id="code" type="number" maxlength="6" minlength="6" placeholder="123456">
+
+      <button class="action_button" onclick="submitPhoneNumberAuthCode()" type="submit" id="sign-in-button">Verify OTP</button>
+
+</div>
+
+
+
+
+<div id="copyright">© Growthfile</div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBLjopx-HI8s45CP9ySp8V19sVS1hWKF_c",
+    authDomain: "frontend-issues.firebaseapp.com",
+    databaseURL: "https://frontend-issues.firebaseio.com",
+    projectId: "frontend-issues",
+    storageBucket: "frontend-issues.appspot.com",
+    messagingSenderId: "854771898159",
+    appId: "1:854771898159:web:66e3412bdfbb388ec973da",
+    measurementId: "G-MZCKWEWLTF"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+<script src="external/js/intlTelInput.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+
+
+ <script src="js/index.js"></script>
+
+</body>
+
+
+
+
+</html>
