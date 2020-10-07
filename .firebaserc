@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "frontend-issues"
+    "default": "frontend-issues",
+    "staging": "growthfilev2-0"
   }
 }
