@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="external/css/intlTelInput.css">
-  
+
 
   <link rel="preload" href="https://unpkg.com/material-components-web@7.0.0/dist/material-components-web.min.css"
     as="style">
@@ -21,11 +21,42 @@
 
 
 <body>
+  <div id="loader" style="display: none;">
+    <div class="dots" >
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+    </div>
+
+  </div>
+
+  <div id="verifying" style="display: none;">
+    <div class="dots">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+    </div>
+  </div>
+
+  <div id="connecting" style="display: none;">
+    <div class="dots">
+      <div class="dot dot1"></div>
+      <div class="dot dot2"></div>
+      <div class="dot dot3"></div>
+      <div class="dot dot4"></div>
+    </div>
+  </div>
+
   <div class="wrapper">
 
     <div class="header">
       <p>Log in</p>
     </div>
+
+
+
 
     <div style="display:none;" id="recaptcha-container"></div>
 
@@ -67,6 +98,7 @@
 
 
     </div>
+
 
 
 
@@ -128,13 +160,13 @@
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyB2SuCoyi9ngRIy6xZRYuzxoQJDtOheiUM",
-        authDomain: "growthfilev2-0.firebaseapp.com",
-        databaseURL: "https://growthfilev2-0.firebaseio.com",
-        projectId: "growthfilev2-0",
-        storageBucket: "growthfilev2-0.appspot.com",
-        messagingSenderId: "1011478688238",
-        appId: "1:1011478688238:web:707166c5b9729182d81eff",
-        measurementId: "G-R2K1J16PTW"
+      authDomain: "growthfilev2-0.firebaseapp.com",
+      databaseURL: "https://growthfilev2-0.firebaseio.com",
+      projectId: "growthfilev2-0",
+      storageBucket: "growthfilev2-0.appspot.com",
+      messagingSenderId: "1011478688238",
+      appId: "1:1011478688238:web:707166c5b9729182d81eff",
+      measurementId: "G-R2K1J16PTW"
     };
     firebase.initializeApp(config);
   </script>

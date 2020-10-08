@@ -115,12 +115,6 @@ text-align: center;
 color: #25456C;
 }
 
-.change_number{
-  
-}
-
-
-
 .copyright{
 
 font-family: Roboto;
@@ -138,9 +132,89 @@ text-align: center;
   top: 96.6%;
 }
 
+#loader{
+  position: absolute;
+  background-image: url(../img/loading.svg);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#verifying{
+  position: absolute;
+  background-image: url(../img/verifying_location.svg);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#connecting{
+  position: absolute;
+  background-image: url(../img/connecting_to_server.svg);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dots{
+  text-align: center;
+  margin-top: 125%;
+  
+}
 
 
+@keyframes dot{
+	0%{
+	  transform:scale(1);
+    opacity: 1;
+	}
 
+	100%{
+	  transform:scale(.3);
+    opacity: 0;
+	}
+}
+.dot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #25456C;
+  animation-name: dot;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  transform:scale(.3);
+  opacity: 0;
+  margin: 20px;
+  
+  
+}
+
+.dot1 {
+  animation-delay:0.6s;
+}
+
+.dot2 {
+  animation-delay:0.75s;
+}
+
+.dot3 {
+  animation-delay:0.9s;
+}
+
+.dot4{
+  animation-delay:1.05s;
+}
 
 /* html, body {
   height: 100%;
@@ -250,4 +324,4 @@ left:39.1%;
   height: 100%;
   z-index: 1;
   */
-}
+/* } */
