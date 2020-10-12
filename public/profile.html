@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Roboto:300,400,500|Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="header">
+        <i id="backarrow" class="fas fa-arrow-left "></i>
+        
+        <p class="section_header">Profile</p>
+    </div>
+
+    <div class="profile_card">
+
+        <div class="details">
+
+            <div class="pfp">
+                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                    style="display: none;">
+
+                <label id="picsum" for="file"> <img id="output" /></label>
+
+            </div>
+
+            <div class="user_info">
+                <p class="name">USER NAME</p>
+                <p class="mobile">+91 (User Mobile Numer)</p>
+                <p class="email">User Email</p>
+            </div>
+
+            <i class="fas fa-chevron-right profile_arrow"></i>
+
+        </div>
+
+        <div class="progress_bar_info">
+
+            <p class="info_text">Profile Completion</p>
+            <p id="profile_percentage">60%</p>
+
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="bank_button">Add Bank Account</button>
+            <button class="aadhaar_button">Add Aadhaar Card</button>
+            <button class="pan_button">Add PAN Card</button>
+        </div>
+    </div>
+
+
+    <div class="profile_main">
+
+        <div class="info_div">
+
+            <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+
+            <div >
+                <p class="info_header">Mobile Number</p>
+                <p class="info_value">+91 (User Mobile Number)</p>
+            </div>
+
+        </div>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <i class="fas fa-university"></i>
+            </div>
+
+            <div >
+                <p class="info_header">Bank Account</p>
+                <p class="info_value">Add Bank Details</p>
+            </div>
+
+        </div>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <i class="far fa-address-card"></i>
+            </div>
+
+            <div >
+                <p class="info_header">Aadhaar Card</p>
+                <p class="info_value">Add Aadhaar Details</p>
+            </div>
+
+        </div>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <i class="far fa-address-card"></i>
+            </div>
+
+            <div >
+                <p class="info_header">PAN Card</p>
+                <p class="info_value">Add PAN Details</p>
+            </div>
+
+        </div>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <i class="far fa-building"></i>
+            </div>
+
+            <div >
+                <p class="info_header">Employee At</p>
+                <i id="office_arrow" class="fas fa-chevron-right "></i>
+                <p class="info_value">Office Detail(Dynamic)</p>
+                
+            </div>
+
+            
+
+        </div>
+        
+        
+
+    </div>
+
+
+
+    <div class="information">
+        <p class="help_text">INFORMATION</p>
+
+       
+        <div class="info_div">
+
+            <div class="icons">
+                <img class="icon_img" src="img/Vector (1).png" alt="">
+                <p class="faq_text">FAQs</p>
+            </div>
+        </div>
+
+        <div class="info_div">
+
+            <div class="icons">
+                <img class="icon_img_policy" src="img/policy.png" alt="">
+                <p class="policy_text">Privacy Policy</p>
+            </div>
+        </div>
+        
+        <div class="info_div">
+
+            <div class="icons">
+                <img class="icon_img_agent" src="img/agent.png" alt="">
+                <p class="policy_text">Contact Us</p>
+            </div>
+        </div>
+        
+            
+
+    </div>
+
+    <div class="settings">
+        <p class="help_text">SETTINGS</p>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <img src="img/personalize.png" alt="">
+            </div>
+
+            <div >
+                <p class="info_header">Personalization</p>
+                <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <p class="info_value">Dark Theme</p>
+            </div>
+
+        </div>
+
+        <div class="info_div">
+
+            <div class="icon">
+                <img src="img/logout.png" alt="">
+            </div>
+
+            <div >
+                <p class="info_header">Log out</p>
+               
+                <p class="info_value">Log out from OnDuty</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
