@@ -41,13 +41,15 @@
 
                 </div>
 
-                <div class="user_info" onclick="editdetails()">
-                    <p class="name">USER NAME</p>
+              <div class="user_info" onClick="window.location='profile_user.html'";>
+                 <p class="name">USER NAME</p>
                     <p class="mobile">+91 (User Mobile Numer)</p>
                     <p class="email">User Email</p>
-                </div>
+                </div>  
 
-                <i onclick="editdetails()" class="fas fa-chevron-right profile_arrow"></i>
+                <i onClick="window.location='profile_user.html'" class="fas fa-chevron-right profile_arrow"></i>
+
+          
 
             </div>
 
@@ -64,8 +66,8 @@
 
             <div class="buttons">
                 <button class="bank_button">Add Bank Account</button>
-                <button class="aadhaar_button">Add Aadhaar Card</button>
-                <button class="pan_button">Add PAN Card</button>
+                <button onClick="window.location='profile_aadhaar.html'" class="aadhaar_button">Add Aadhaar Card</button>
+                <button onClick="window.location='profile_pan.html'" class="pan_button">Add PAN Card</button>
             </div>
         </div>
 
@@ -124,7 +126,7 @@
 
             </div>
 
-            <div class="info_div" onclick="employeedetails()">
+            <div class="info_div" onClick="window.location='profile_employee.html'">
 
                 <div class="icon">
                     <i class="far fa-building"></i>
@@ -215,148 +217,6 @@
 
             </div>
         </div>
-    </div>
-
-    <div id="employee_details">
-        <div class="header">
-            <i onclick="showprofile()" id="backarrow" class="fas fa-arrow-left "></i>
-
-            <p class="section_header">Employee Details</p>
-        </div>
-
-        
-        <div class="details_div">
-
-            
-            <div class="info_div">
-
-                <div class="icon">
-                    <i class="far fa-building"></i>
-                </div>
-
-                <div>
-                    <p class="info_header">Employee At</p>
-                    
-                    <p class="info_value">Office Detail(Dynamic)</p>
-
-                </div>
-
-
-
-            </div>
-
-            <div class="info_div">
-
-                <div class="icon">
-                    <i class="far fa-id-badge"></i>
-                </div>
-
-                <div>
-                    <p class="info_header">Designation</p>
-                    <p class="info_value">Sales Executive(Dynamic)</p>
-                </div>
-
-            </div>
-
-            <div class="info_div">
-
-                <div class="icon">
-                    <i class="far fa-id-card"></i>
-                </div>
-
-                <div>
-                    <p class="info_header">Employee ID </p>
-                    <p class="info_value">(Dynamic)</p>
-                </div>
-
-            </div>
-
-            <div class="info_div">
-
-                <div class="icon">
-                    <img src="img/super (1).png" alt="">
-                </div>
-
-                <div>
-                    <p class="info_header">Supervisor</p>
-                    <p class="info_value">(Dynamic)</p>
-                </div>
-
-            </div>
-
-            <div class="info_div">
-
-                <div class="icon">
-                    <img src="img/department.png" alt="">
-                </div>
-
-                <div>
-                    <p class="info_header">Department</p>
-                    
-                    <p class="info_value">(Dynamic)</p>
-
-                </div>
-
-
-
-            </div>
-
-            
-            <div class="info_div">
-
-                <div class="icon">
-                   <img src="img/region.png" alt="">
-                </div>
-
-                <div>
-                    <p class="info_header">Region</p>
-                  
-                    <p class="info_value">(Dynamic)</p>
-
-                </div>
-
-
-
-            </div>
-
-        </div>
-
-        
-
-    </div>
-
-    <div id="edit_profile">
-
-        <div class="header">
-            <i onclick="showprofile()" id="backarrow" class="fas fa-arrow-left "></i>
-
-            <p class="section_header">Edit Profile</p>
-        </div>
-
-        <div class="fields">
-
-
-            <label class="pure-material-textfield-outlined">
-                <input type="text" id="f_name" placeholder=" ">
-                <span>First Name</span>
-            </label>
-
-
-            <label class="pure-material-textfield-outlined">
-                <input type="text" id="l_name" placeholder=" ">
-                <span>Last Name</span>
-            </label>
-
-
-            <label class="pure-material-textfield-outlined">
-                <input type="email" id="email" placeholder=" ">
-                <span>Email ID</span>
-            </label>
-
-            <button id="process_button" type="submit">SAVE & PROCEES</button>
-
-        </div>
-
     </div>
 
 </body>

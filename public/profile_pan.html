@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="css/profile_pan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Roboto:300,400,500|Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/profile_pan.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div id="edit_profile">
+
+        <div class="header">
+            <a href="profile.html"> <i id="backarrow" class="fas fa-arrow-left "></i> </a>
+
+            <p class="section_header">PAN Card Details</p>
+        </div>
+
+        <div class="fields">
+
+
+            <label class="pure-material-textfield-outlined">
+                <input type="text" id="f_name" placeholder=" " value="">
+                <span>PAN Number*</span>
+            </label>
+
+            <p class="info_text">Upload Picture*</p>
+
+            <div class="background_front">
+                <div class="pancard">
+
+                    <input type="file" accept="image/*" name="image" id="file_front" onchange="load_front(event)"
+                        style="display: none;">
+
+                    <label for="file_front"> <img id="output_pan" />
+                        <br>
+                        <img src="img/pan_front.png" alt=""></label>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+            <button id="process_button" type="submit">SAVE</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
