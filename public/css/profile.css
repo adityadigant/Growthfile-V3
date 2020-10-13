@@ -155,7 +155,8 @@ a{
     animation: load 1s normal forwards;
    
     border-radius: 10px;
-    background: rgba(24, 68, 102, 1);
+    background:  rgba(37, 69, 108, 1);
+
 
     height: 6px;
     
@@ -175,7 +176,8 @@ a{
   .bank_button, .aadhaar_button{
       width: 33.3%;
       height: 32px;
-      background: rgba(24, 68, 102, 1);
+      background:rgba(37, 69, 108, 1);
+
       color:  rgba(255, 250, 250, 1);
       border-radius: 3px;
       border: 0px;
@@ -193,7 +195,8 @@ letter-spacing: 0.11em;
   .pan_button{
       width: 26.6%;
       height: 32px;
-      background: rgba(24, 68, 102, 1);
+      background:  rgba(37, 69, 108, 1);
+
       color:  rgba(255, 250, 250, 1);
       border-radius: 3px;
       border: 0px;
@@ -390,11 +393,13 @@ letter-spacing: 0.05em;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color:  rgba(37, 69, 108, 1);
+
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px  rgba(37, 69, 108, 1);
+
   }
   
   input:checked + .slider:before {
