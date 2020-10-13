@@ -48,6 +48,7 @@ border-bottom:solid 1px rgba(0, 0, 0,0.1);
 
 a{
     text-decoration: none;
+    color: black;
 }
 .details{
     display: flex;

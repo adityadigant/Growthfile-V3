@@ -15,6 +15,7 @@
 
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/profile_bank.js"></script>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -50,8 +51,9 @@
             </label>
 
             <label class="pure-material-textfield-outlined">
-                <input type="text" id="ifsc_code" placeholder=" ">
+                <input type="text" id="ifsc_code" placeholder=" " value="">
                 <span>IFSC Code*</span>
+                <p id="alert_message">* Please enter a valid IFSC number</p>
             </label>
 
             <label class="pure-material-textfield-outlined">
@@ -64,7 +66,7 @@
 
             
 
-            <button id="process_button" type="submit">SAVE</button>
+            <button id="process_button" type="submit" onclick="bank_validation()">SAVE</button>
 
         </div>
 

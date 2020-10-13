@@ -16,7 +16,7 @@
 
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-        rel="stylesheet" />
+        rel="stylesheet"/>
 
 
 </head>
@@ -35,9 +35,12 @@
 
 
             <label class="pure-material-textfield-outlined">
-                <input type="text" id="f_name" placeholder=" " value="">
+                <input type="text" id="aadhaar_number" placeholder=" " value="">
                 <span>Aadhaar Number*</span>
+                <p id="alert_message">* Please enter a valid AADHAR number</p>
             </label>
+
+           
 
             <p class="info_text">Upload Picture*</p>
 
@@ -78,7 +81,7 @@
 
             </div>
 
-            <button id="process_button" type="submit">SAVE</button>
+            <button id="process_button" type="submit" id="aadhaar_submit" onclick="aadhaar_validation()">SAVE</button>
 
         </div>
 
