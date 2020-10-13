@@ -212,21 +212,42 @@ text-align: left;
     
 }
 
-.pancard{    
-    margin-top: 12px;
+.pancard{   
+    text-align: center;
+  
+    height: 100%;
+    
 }
 
+.pan_front_text{
+   position: absolute;
+   top: 80%;
+   left: 40%;
+   padding: 3px;
+   background-color: rgba(255, 255, 255,1);
+   border: 1px dotted black;
+   border-radius: 75px;
+   box-shadow: black;
+   font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.15px;
+text-align: left;
 
+   
+}
 
 #output_pan{
 text-align: center;
 
-    margin-top: 20px;
+margin-top: 24px;
     
     background-image:url(../img/pan_sample.png);
     background-repeat: no-repeat;  
-    width: 144px;
-    height: 118px;
+    width: 192px;
+    height: 117px;
   }
   
 
