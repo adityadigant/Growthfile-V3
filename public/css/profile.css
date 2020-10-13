@@ -297,6 +297,7 @@ text-align: left;
     margin-top: 16.5px;
     width: 15px;
     height: 15px;
+    color: rgba(37, 69, 108, 1);
 }
 
 .icon_img_policy{
@@ -304,6 +305,7 @@ text-align: left;
     margin-top: 16.5px;
     width: 13.5px;
     height: 16.5px;
+    color: rgba(37, 69, 108, 1);
 }
 
 
@@ -312,7 +314,7 @@ text-align: left;
     margin-top: 16.5px;
     width: 15px;
     height: 13.5px;
-    color:  rgba(24, 68, 102, 1);
+    color:  rgba(37, 69, 108, 1);
     filter: scale(100%);
     
 }
