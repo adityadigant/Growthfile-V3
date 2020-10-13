@@ -353,8 +353,8 @@ letter-spacing: 0.05em;
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 20px;
+    width: 45px;
+    height: 10px;
   }
   
   /* Hide default HTML checkbox */
@@ -372,7 +372,7 @@ letter-spacing: 0.05em;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(233, 230, 230);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -380,11 +380,11 @@ letter-spacing: 0.05em;
   .slider:before {
     position: absolute;
     content: "";
-    height: 12px;
-    width: 12px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    height: 18px;
+    width: 18px;
+    
+    bottom: -4px;
+    background-color: rgb(187, 183, 183);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -398,9 +398,9 @@ letter-spacing: 0.05em;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(41px);
-    -ms-transform: translateX(41px);
-    transform: translateX(41px);
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
   }
   
   /* Rounded sliders */
