@@ -1,0 +1,322 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --mdc-theme-primary: #184466;
+  --mdc-theme-secondary: #ffffff;
+  --mdc-theme-background: #7C909E;
+  --mdc-theme-on-primary: #ffffff;
+  --mdc-theme-on-secondary: #ffffff;
+  --mdc-theme-text-primary-on-light: #FFFFFF;
+  --mdc-theme-text-primary-on-dark: #cccccc;
+  --mdc-theme--error:red;
+  --mdc-theme--success:#20bd20;
+  --mdc-theme--warning:yellow;
+}
+html {
+  box-sizing: border-box;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+#app-current-panel {
+  height: 100%;
+  overflow-y: auto;
+}
+
+#map {
+
+  display: none
+}
+
+.mdc-fab , .mdc-button--raised {
+  background-color: #103153 !important;
+  color: var(--mdc-theme-on-primary) !important;
+  z-index: 1;
+}
+
+
+body {
+  margin: 0;
+  background-color: white;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.mdc-top-app-bar {
+  padding-top:20px;
+  /* Status bar height on iOS 11.0 */
+  padding-top: constant(safe-area-inset-top);
+  /* Status bar height on iOS 11+ */
+  padding-top: env(safe-area-inset-top);
+}
+
+@media (max-width:599px) {
+  .mdc-top-app-bar--fixed-adjust {
+    padding-top:calc(56px + 20px);
+    /* Status bar height on iOS 11.0 */
+    padding-top: calc(56px +constant(safe-area-inset-top));
+    /* Status bar height on iOS 11+ */
+    padding-top:calc(56px + env(safe-area-inset-top))
+  }
+}
+
+#app-current-panel {
+  position: relative;
+  max-width: 1120px;
+  margin:  0 auto;
+}
+
+.app-padding {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+
+
+.app {
+  padding: 0;
+}
+
+.cell-space {
+  grid-gap: 0
+}
+
+/** helpers **/
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+.bold {
+  font-weight: bold;
+}
+.veritical-horizontal-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center
+}
+.text-right {
+  text-align: right;
+}
+.text-left  {
+  text-align: left;
+}
+
+.freeze {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.resize-veritcal {
+  resize: vertical;
+}
+
+
+.center-abs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/**success **/
+#success-animation svg {
+  width: 100px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+#success-animation svg .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+#success-animation svg .circle {
+  -webkit-animation: dash .9s ease-in-out;
+  animation: dash .9s ease-in-out;
+}
+
+#success-animation svg .line {
+
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash .9s .35s ease-in-out forwards;
+  animation: dash .9s .35s ease-in-out forwards;
+}
+
+#success-animation svg .check {
+  stroke-dashoffset: -100;
+  -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+  animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+#success-animation p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+  font-weight: bold
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
